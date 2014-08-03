@@ -25,7 +25,7 @@ class Slack(Service):
             r'^{}\W*(.*)$'.format(request.params.get('trigger_word', '')),
             request.params.get('text', '')
         )
-        return (user_arg + room_arg + shlex.split(m.group(1))) if m is not None else ''
+        return (user_arg + room_arg + shlex.split(m.group(1).decode('utf8'))) if m is not None else ''
 
     def make_response(self, result):
         return {
