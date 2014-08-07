@@ -8,7 +8,7 @@ install_requires = [
 
 setup(
     name='djehutyslack',
-    version='0.0.2',
+    version='0.0.3',
     description='chat bot service for djehuty',
     author='xica development team',
     author_email='info@xica.net',
