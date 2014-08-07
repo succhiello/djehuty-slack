@@ -3,16 +3,29 @@ from setuptools import setup, find_packages
 
 
 install_requires = [
-    'thoth==0.0.2',
+    'djehuty==0.0.3',
 ]
 
 setup(
-    name='thothslack',
-    version='0.0.2',
-    description='chat bot service for thoth',
+    name='djehutyslack',
+    version='0.0.3',
+    description='chat bot service for djehuty',
     author='xica development team',
     author_email='info@xica.net',
-    url='http://xica-inc.com',
+    url='https://github.com/xica/djehutyslack',
+    license='MIT',
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Environment :: Web Environment',
+        'Framework :: Pyramid',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: POSIX :: Linux',
+        'Programming Language :: Python',
+        'Topic :: Communications :: Chat',
+        'Topic :: Internet :: WWW/HTTP :: HTTP Servers',
+        'Topic :: Internet :: WWW/HTTP :: WSGI :: Application',
+    ],
     packages=find_packages(),
     install_requires=install_requires,
 )

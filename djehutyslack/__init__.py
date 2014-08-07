@@ -3,4 +3,4 @@
 
 def includeme(config):
 
-    config.scan('thothslack.slack')
+    config.scan('djehutyslack.slack')

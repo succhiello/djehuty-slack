@@ -6,14 +6,14 @@ import shlex
 
 from pyramid.httpexceptions import HTTPUnauthorized
 
-from thoth.service import Service
+from djehuty.service import Service
 
 
 class Slack(Service):
 
     def validate(self, request):
         token = request.params.get('token')
-        if not token or token != os.environ.get('THOTH_SLACK_OUTGOING_TOKEN'):
+        if not token or token != os.environ.get('DJEHUTY_SLACK_OUTGOING_TOKEN'):
             raise HTTPUnauthorized()
 
     def get_user(self, request):
