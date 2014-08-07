@@ -3,13 +3,13 @@ from setuptools import setup, find_packages
 
 
 install_requires = [
-    'thoth==0.0.2',
+    'djehuty==0.0.2',
 ]
 
 setup(
-    name='thothslack',
+    name='djehutyslack',
     version='0.0.2',
-    description='chat bot service for thoth',
+    description='chat bot service for djehuty',
     author='xica development team',
     author_email='info@xica.net',
     url='http://xica-inc.com',

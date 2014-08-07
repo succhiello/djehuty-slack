@@ -1,4 +1,4 @@
-thothslack
-==========
+djehutyslack
+============
 
-chat bot service for thoth
+chat bot service for djehuty
