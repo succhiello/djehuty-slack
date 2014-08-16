@@ -16,11 +16,13 @@ class Slack(Service):
         if not token or token != os.environ.get('DJEHUTY_SLACK_OUTGOING_TOKEN'):
             raise HTTPUnauthorized()
 
-    def get_user(self, request):
-        return request.params.get('user_name')
-
-    def get_room(self, request):
-        return request.params.get('channel_name')
+    def get_service_argument(self, name, request):
+        if name == 'user':
+            return request.params.get('user_name')
+        elif name == 'room':
+            return request.params.get('channel_name')
+        else:
+            raise ValueError('invalid argument name "{}"'.format(name))
 
     def make_command_line(self, request):
         m = re.match(
