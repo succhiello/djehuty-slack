@@ -3,12 +3,12 @@ from setuptools import setup, find_packages
 
 
 install_requires = [
-    'djehuty==0.0.3',
+    'djehuty==0.0.4',
 ]
 
 setup(
     name='djehutyslack',
-    version='0.0.3',
+    version='0.0.4',
     description='chat bot service for djehuty',
     author='xica development team',
     author_email='info@xica.net',
