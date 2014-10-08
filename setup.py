@@ -12,7 +12,7 @@ setup(
     description='chat bot service for djehuty',
     author='xica development team',
     author_email='info@xica.net',
-    url='https://github.com/xica/djehutyslack',
+    url='https://github.com/xica/djehuty-slack',
     license='MIT',
     classifiers=[
         'Development Status :: 3 - Alpha',

@@ -1,5 +1,5 @@
-djehutyslack
-============
+djehuty-slack
+=============
 
 djehuty service for Slack Outgoing WebHooks
 
